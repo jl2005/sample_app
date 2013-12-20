@@ -25,7 +25,7 @@ module SampleApp
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
 		config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
-		config.assets.precompile += %w(*.js *.css)
+		config.assets.precompile += %w(application.css custom.css.scss sessions.css.scss static_pages.css.scss users.css.scss application.js sessions.js.coffee static_pages.js.coffee users.js.coffee)
 		config.assets.initialize_on_precompile = false
   end
 end
